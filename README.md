@@ -100,3 +100,7 @@ sh -n configure-input.sh
 ```
 
 The tests exercise click filtering and repeat/bounce protection without sending commands to a real relay.
+
+## License
+
+[MIT](LICENSE). The downloaded SonoffLAN client modules retain their upstream MIT license and attribution.
