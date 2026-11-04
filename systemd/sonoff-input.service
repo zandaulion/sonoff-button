@@ -1,0 +1,15 @@
+[Unit]
+Description=Sonoff relay control from a reused mouse or keyboard
+
+[Service]
+Type=simple
+EnvironmentFile=%h/.config/sonoff-button/input.env
+ExecStart=/usr/bin/python3 %h/.local/share/sonoff-button/listener.py
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=yes
+UMask=0077
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

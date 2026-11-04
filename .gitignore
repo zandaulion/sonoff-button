@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+upstream/
+device.json
+input.env
+.env
+.env.*
+*.log
+*.bak
+*.backup
+.coverage
+.pytest_cache/
